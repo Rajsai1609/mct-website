@@ -47,7 +47,6 @@ const quicklinks = [
   { label: "Services", href: "#services" },
   { label: "Process", href: "#process" },
   { label: "Integrations", href: "#integrations" },
-  { label: "Testimonials", href: "#testimonials" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -125,38 +124,6 @@ const processSteps = [
   },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "MC Technology transformed our operations. We saved 500+ hours in the first quarter alone.",
-    name: "Sarah Chen",
-    role: "COO",
-    company: "TechFlow Inc.",
-  },
-  {
-    quote:
-      "The automation systems they built for our finance team reduced manual work by 70%.",
-    name: "Michael Torres",
-    role: "CFO",
-    company: "GrowthCapital",
-  },
-  {
-    quote:
-      "Our customer response time went from hours to minutes. Incredible ROI.",
-    name: "Emily Nakamura",
-    role: "CEO",
-    company: "RetailMax",
-  },
-];
-
-const metrics = [
-  { value: "500+", label: "Hours Saved per Client" },
-  { value: "70%", label: "Reduction in Manual Work" },
-  { value: "3x", label: "Faster Operations" },
-  { value: "48hrs", label: "Average Deployment" },
-  { value: "100+", label: "Workflows Automated" },
-  { value: "98%", label: "Client Satisfaction" },
-];
 
 const faqs = [
   {
@@ -548,78 +515,6 @@ function ProcessSection() {
   );
 }
 
-function TestimonialsSection() {
-  return (
-    <section id="testimonials" className="bg-[#0c0c0c] py-24 md:py-40 border-y border-white/5">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.8 }}
-          className="mb-16"
-        >
-          <p className="text-[#d4a574] text-sm tracking-[0.3em] uppercase mb-4">Testimonials</p>
-          <h2 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white tracking-tight">
-            Trusted by industry leaders
-          </h2>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, i) => (
-            <motion.div
-              key={testimonial.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
-              transition={{ delay: i * 0.15, duration: 0.6 }}
-              className="bg-[#111111] border border-white/5 hover:border-[#d4a574]/20 p-8 md:p-10 rounded-sm transition-all duration-500"
-            >
-              <Quote className="w-8 h-8 text-[#d4a574]/30 mb-6" strokeWidth={1} />
-
-              <p className="text-white/70 text-lg leading-relaxed mb-8">
-                "{testimonial.quote}"
-              </p>
-
-              <div className="border-t border-white/5 pt-6">
-                <p className="font-display font-semibold text-white mb-1">{testimonial.name}</p>
-                <p className="text-white/30 text-sm">
-                  {testimonial.role}, {testimonial.company}
-                </p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function MetricsSection() {
-  return (
-    <section className="bg-[#050505] py-24 md:py-32">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:gap-4">
-          {metrics.map((metric, i) => (
-            <motion.div
-              key={metric.label}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="text-center lg:text-left"
-            >
-              <p className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-[#d4a574] mb-2">
-                {metric.value}
-              </p>
-              <p className="text-white/30 text-xs lg:text-sm tracking-wide">{metric.label}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -952,8 +847,7 @@ export default function HomePage() {
       <ServicesSection />
       <IntegrationsSection />
       <ProcessSection />
-      <TestimonialsSection />
-      <MetricsSection />
+
       <FAQSection />
       <CTASection onContactClick={() => setIsContactOpen(true)} />
       <Footer />
