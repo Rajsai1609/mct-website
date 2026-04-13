@@ -139,20 +139,24 @@ const processSteps = [
 
 const faqs = [
   {
-    q: "Do I need a technical background to use your automations?",
-    a: "No. We handle everything and deliver systems your team can use with zero coding knowledge.",
+    q: "Do I need a technical background to work with you?",
+    a: "No. We handle everything end-to-end and deliver systems your team can use with zero coding knowledge.",
   },
   {
-    q: "How long does it take to build an automation?",
-    a: "Simple automations go live in 48 hours. Complex agentic AI systems typically take 1–3 weeks.",
+    q: "How long does it take to build an automation system?",
+    a: "Most systems are deployed within 1-2 weeks. Complex multi-agent pipelines may take 3-4 weeks depending on scope.",
   },
   {
-    q: "Will this work with my existing tools?",
-    a: "Yes. We integrate with 200+ tools including Google Workspace, HubSpot, Notion, Slack, and more.",
+    q: "What tools and platforms do you work with?",
+    a: "We work with Make.com, Supabase, Railway, Vercel, OpenAI, Anthropic Claude, and 200+ integrations including CRMs, Google Workspace, and more.",
   },
   {
-    q: "Is this only for large enterprises?",
-    a: "Not at all. We serve startups and small businesses too — our solutions are priced and scoped to your size.",
+    q: "Do you work with small businesses or only large companies?",
+    a: "We specialize in SMBs — restaurants, realtors, staffing agencies, and growing businesses that want enterprise-level AI without the enterprise price tag.",
+  },
+  {
+    q: "What is Agentic AI and how is it different from regular automation?",
+    a: "Regular automation follows fixed rules. Agentic AI uses autonomous agents that can reason, make decisions, and adapt — handling complex tasks without human intervention.",
   },
 ];
 
@@ -827,7 +831,7 @@ function Footer() {
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/20 text-sm">
-            © 2025 MC Technology. All rights reserved.
+            © 2026 MC Technology. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
             <a href="https://www.linkedin.com/company/mctechnology/" target="_blank" rel="noopener noreferrer" className="text-white/30 hover:text-[#d4a574] transition-colors duration-300">
