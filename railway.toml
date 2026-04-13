@@ -1,0 +1,9 @@
+[railway]
+nodeVersion = "20.11.0"
+
+[build]
+buildCommand = "npm ci --omit=dev && npm run build"
+startCommand = "npm start"
+
+[deploy]
+healthcheckPath = "/"
