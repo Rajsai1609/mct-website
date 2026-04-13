@@ -8,6 +8,11 @@ import {
   Puzzle,
   Compass,
   MessageSquare,
+  Bot,
+  Layers,
+  Utensils,
+  Building2,
+  GraduationCap,
   ChevronDown,
   ChevronUp,
   ArrowRight,
@@ -52,33 +57,40 @@ const quicklinks = [
 
 const services = [
   {
-    icon: Brain,
-    title: "Agentic AI Development",
-    description:
-      "Autonomous AI agents that think, decide, and act on your behalf",
-  },
-  {
     icon: Workflow,
-    title: "Business Process Automation",
+    title: "AI Automation Systems",
     description:
-      "End-to-end automation of repetitive workflows and manual tasks",
+      "End-to-end automation of business workflows using multi-agent pipelines — lead gen, follow-ups, scheduling, CRM updates, and reporting.",
   },
   {
-    icon: Puzzle,
-    title: "Custom AI Integrations",
-    description: "Connecting AI tools into your existing software stack",
+    icon: Layers,
+    title: "AI-Powered Applications",
+    description:
+      "Custom AI apps built for your business — resume tools, property valuation models, AI chatbots, and intelligent dashboards.",
   },
   {
-    icon: Compass,
-    title: "Workflow Consulting & Design",
+    icon: Brain,
+    title: "Autonomous Multi-Agent Solutions",
     description:
-      "Mapping and redesigning your operations for maximum efficiency",
+      "Deploy specialized AI agents that sense, reason, orchestrate, and optimize — operating autonomously with minimal human intervention.",
   },
   {
-    icon: MessageSquare,
-    title: "AI Chatbots & Virtual Assistants",
+    icon: Utensils,
+    title: "MCTResto — Restaurant Growth AI",
     description:
-      "24/7 intelligent assistants for support, sales, and operations",
+      "AI social media content, catering automation, and customer engagement systems built specifically for restaurants.",
+  },
+  {
+    icon: Building2,
+    title: "MCT Realty — Real Estate AI",
+    description:
+      "AI-powered lead generation, CRM automation, follow-up sequences, and property valuation for real estate agents.",
+  },
+  {
+    icon: GraduationCap,
+    title: "MCT PathAI — Career Acceleration",
+    description:
+      "AI job matching, resume scoring, H1B/OPT-aware job scraping, and automated application pipelines for students and professionals.",
   },
 ];
 
