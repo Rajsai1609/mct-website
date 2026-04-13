@@ -112,27 +112,27 @@ const integrations = [
 const processSteps = [
   {
     num: "01",
-    title: "Discover",
+    title: "Sense",
     description:
-      "We audit your current workflows and identify automation opportunities",
+      "We audit your business, identify pain points, and gather data to understand exactly where AI can make the biggest impact.",
   },
   {
     num: "02",
-    title: "Design",
+    title: "Reason",
     description:
-      "We architect a custom AI automation blueprint for your business",
+      "We architect a custom AI strategy and design the multi-agent blueprint tailored specifically to your business goals.",
   },
   {
     num: "03",
-    title: "Deploy",
+    title: "Orchestrate",
     description:
-      "We build and integrate your automation systems with zero disruption",
+      "We build and deploy your AI automation systems, connecting all agents, tools, and workflows with zero disruption.",
   },
   {
     num: "04",
     title: "Optimize",
     description:
-      "We monitor, refine, and scale your systems for peak performance",
+      "We continuously monitor, refine, and scale your systems — ensuring peak performance and maximum ROI.",
   },
 ];
 
