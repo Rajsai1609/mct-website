@@ -307,7 +307,7 @@ function HeroSection() {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="text-[#d4a574] text-sm tracking-[0.3em] uppercase mb-8"
             >
-              AI-Powered Automation
+              AI AUTOMATION & AGENTIC SERVICES AGENCY
             </motion.p>
 
             <motion.h1
@@ -316,11 +316,9 @@ function HeroSection() {
               transition={{ delay: 0.3, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="font-display font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white mb-8 leading-[0.9] tracking-tight"
             >
-              Automate
+              Automate. Build.
               <br />
-              <span className="text-gold-gradient">Everything.</span>
-              <br />
-              Scale Faster.
+              <span className="text-gold-gradient">Scale with AI.</span>
             </motion.h1>
 
             <motion.p
@@ -329,9 +327,7 @@ function HeroSection() {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="text-white/40 text-lg md:text-xl max-w-lg mb-12 leading-relaxed"
             >
-              MC Technology builds AI-powered automation systems that eliminate
-              manual work, cut costs, and unlock growth — for businesses of
-              every size.
+              We build AI automation systems, AI-powered applications, and autonomous multi-agent solutions that eliminate manual work and scale your business.
             </motion.p>
 
             <motion.div
